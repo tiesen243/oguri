@@ -1,0 +1,3 @@
+{
+  "extends": "@oguri/tsconfig/base.json"
+}

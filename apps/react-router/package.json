@@ -1,0 +1,45 @@
+{
+  "name": "@oguri/react-router",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun run with-env react-router build",
+    "clean": "git clean -xdf .cache .react-router .turbo .vercel build node_modules",
+    "dev": "bun run with-env react-router dev",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "bun run with-env react-router typegen && eslint",
+    "start": "PORT=3001 bun run with-env react-router-serve ./build/server/index.js",
+    "typecheck": "bun run with-env react-router typegen && tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "prettier": "@oguri/prettier-config",
+  "dependencies": {
+    "@oguri/ui": "workspace:*",
+    "@oguri/validators": "workspace:*",
+    "@react-router/fs-routes": "^7.7.0",
+    "@react-router/node": "^7.7.0",
+    "@react-router/serve": "^7.7.0",
+    "isbot": "^5.1.28",
+    "react": "catalog:react",
+    "react-dom": "catalog:react",
+    "react-router": "^7.7.0"
+  },
+  "devDependencies": {
+    "@oguri/eslint-config": "workspace:*",
+    "@oguri/prettier-config": "workspace:*",
+    "@oguri/tsconfig": "workspace:*",
+    "@react-router/dev": "^7.7.0",
+    "@tailwindcss/vite": "catalog:tailwind",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react",
+    "@types/react-dom": "catalog:react",
+    "dotenv-cli": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "tailwindcss": "catalog:tailwind",
+    "typescript": "catalog:",
+    "vite": "^7.0.5",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

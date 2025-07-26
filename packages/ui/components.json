@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "tsx": true,
+  "rsc": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/tailwind.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@oguri/ui",
+    "hooks": "@oguri/ui/hooks",
+    "lib": "@oguri/ui/lib",
+    "utils": "@oguri/ui",
+    "ui": "@oguri/ui/components"
+  },
+  "iconLibrary": "lucide"
+}
