@@ -1,0 +1,40 @@
+{
+  "name": "@oguri/db",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "db:push": "bun run with-env drizzle-kit push",
+    "db:studio": "bun run with-env drizzle-kit studio",
+    "dev": "tsc --watch",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "prettier": "@oguri/prettier-config",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "drizzle-kit": "^0.31.4",
+    "drizzle-orm": "^0.44.3",
+    "fumadb": "^0.0.6"
+  },
+  "devDependencies": {
+    "@oguri/eslint-config": "workspace:*",
+    "@oguri/prettier-config": "workspace:*",
+    "@oguri/tsconfig": "workspace:*",
+    "dotenv-cli": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}

@@ -15,6 +15,8 @@
   },
   "prettier": "@oguri/prettier-config",
   "dependencies": {
+    "@oguri/auth": "workspace:*",
+    "@oguri/db": "workspace:*",
     "@oguri/ui": "workspace:*",
     "@oguri/validators": "workspace:*",
     "@react-router/fs-routes": "^7.7.0",

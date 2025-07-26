@@ -7,6 +7,11 @@ export const env = createEnv({
       'development',
     ),
 
+    DATABASE_URL: z.string(),
+
+    AUTH_DISCORD_ID: z.string(),
+    AUTH_DISCORD_SECRET: z.string(),
+
     // Vercel environment variables
     VERCEL: z.optional(z.string()),
     VERCEL_ENV: z.optional(z.enum(['production', 'preview', 'development'])),

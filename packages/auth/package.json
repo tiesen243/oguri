@@ -1,0 +1,46 @@
+{
+  "name": "@oguri/auth",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts",
+      "react-server": "./src/index.rsc.ts"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "default": "./src/react.tsx"
+    },
+    "./csrf": {
+      "types": "./dist/csrf.d.ts",
+      "default": "./src/csrf.ts"
+    },
+    "./rate-limit": {
+      "types": "./dist/rate-limit.d.ts",
+      "default": "./src/rate-limit.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "tsc --watch",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@oguri/prettier-config",
+  "dependencies": {
+    "@oguri/db": "workspace:*",
+    "@oguri/validators": "workspace:*"
+  },
+  "devDependencies": {
+    "@oguri/eslint-config": "workspace:*",
+    "@oguri/prettier-config": "workspace:*",
+    "@oguri/tsconfig": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  }
+}
