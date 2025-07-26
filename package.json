@@ -46,7 +46,6 @@
   "devDependencies": {
     "@oguri/prettier-config": "workspace:*",
     "@oguri/tsconfig": "workspace:*",
-    "@turbo/gen": "^2.5.5",
     "turbo": "^2.5.5"
   },
   "packageManager": "bun@1.2.19",

@@ -11,10 +11,7 @@ export const users = pgTable('user', {
   email: varchar('email', { length: 255 }).unique().notNull(),
   image: varchar('image', { length: 255 }).notNull(),
   createdAt: timestamp('created_at').notNull().defaultNow(),
-  updatedAt: timestamp('updated_at')
-    .notNull()
-    .defaultNow()
-    .$onUpdateFn(() => new Date()),
+  updatedAt: timestamp('updated_at').notNull().defaultNow(),
 })
 
 export const usersRelations = relations(users, ({ many }) => ({
@@ -115,3 +112,4 @@ export const postsRelations = relations(posts, ({ one }) => ({
     references: [users.id],
   }),
 }))
+

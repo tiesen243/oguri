@@ -19,19 +19,19 @@
     "@oguri/db": "workspace:*",
     "@oguri/ui": "workspace:*",
     "@oguri/validators": "workspace:*",
-    "@react-router/fs-routes": "^7.7.0",
-    "@react-router/node": "^7.7.0",
-    "@react-router/serve": "^7.7.0",
+    "@react-router/fs-routes": "^7.7.1",
+    "@react-router/node": "^7.7.1",
+    "@react-router/serve": "^7.7.1",
     "isbot": "^5.1.28",
     "react": "catalog:react",
     "react-dom": "catalog:react",
-    "react-router": "^7.7.0"
+    "react-router": "^7.7.1"
   },
   "devDependencies": {
     "@oguri/eslint-config": "workspace:*",
     "@oguri/prettier-config": "workspace:*",
     "@oguri/tsconfig": "workspace:*",
-    "@react-router/dev": "^7.7.0",
+    "@react-router/dev": "^7.7.1",
     "@tailwindcss/vite": "catalog:tailwind",
     "@types/node": "catalog:",
     "@types/react": "catalog:react",
@@ -41,7 +41,7 @@
     "prettier": "catalog:",
     "tailwindcss": "catalog:tailwind",
     "typescript": "catalog:",
-    "vite": "^7.0.5",
+    "vite": "^7.0.6",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
